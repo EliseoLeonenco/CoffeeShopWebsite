@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Baza Brew Coffee</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	</head>
+	<body>
+    
+    <!-- Header structure -->
+    <header class="header">
+
+			<a href="index.html" class="logo">
+				<img src="images/baza_brew.png" alt="">
+			</a>
+
+			<nav class="menubar">
+				<img src="images/ornament_3.png" alt="">
+				<a href="index.html">Home</a>
+				<a href="about.html">About us</a>
+				<a href="menu.html">Menu</a>
+        <a href="account.html">Account</a>
+				<img src="images/ornament_2.png" alt="">
+			</nav>
+
+			<div class="icons">
+				<div class="fas fa-search" id="search-btn"></div>
+				<div class="fas fa-shopping-cart" id="cart-btn"></div>
+				<div class="fas fa-bars" id="menu-btn"></div>
+			</div>
+
+			<div class="search-form">
+				<input type="search" id="search-box" placeholder="search here...">
+				<label for="search-box" class="fas fa-search"></label>
+			</div>
+
+		</header>
+
+    <!-- Menu containers structure -->
+    <section class="menu" id="menu">
+      <h1 class="heading"> our <span>menu</span> </h1>
+        
+      <div class="toggle-btn" id="food-panel">Food</div>
+        
+      <div class="box-container" id="food-panel">
+        <div class="box">
+          <img src="https://picsum.photos/id/835/200/200" alt="">
+          <h3>Lemon Ginger Shortbread</h3>
+          <div class="price">£3.99</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+        
+        <div class="box">
+          <img src="https://picsum.photos/id/835/200/200" alt="">
+          <h3>Banana & Chocolate Loaf</h3>
+          <div class="price">£3.45 <span>4.25</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      
+        <div class="box">
+          <img src="https://picsum.photos/id/835/200/200" alt="">
+          <h3>Scone</h3>
+          <div class="price">£3.15</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/835/200/200" alt="">
+          <h3>Cakesmiths Victoria Sponge</h3>
+          <div class="price">£4.19</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/835/200/200" alt="">
+          <h3>Carrot Cake</h3>
+          <div class="price">£4.19 <span>4.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/835/200/200" alt="">
+          <h3>Cracked Egg Muffin</h3>
+          <div class="price">£3.49</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/835/200/200" alt="">
+          <h3>Hot Cross Bun</h3>
+          <div class="price">£2.89</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+            
+      </div>
+
+      <div class="toggle-btn" id="hot-drinks-panel">Hot Drinks</div>
+      
+      <div class="box-container" id="hot-drinks-panel">
+
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>Black Americano</h3>
+          <div class="price">£4.15</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>White Americano</h3>
+          <div class="price">£4.15</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>Latte</h3>
+          <div class="price">£4.89</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>Cappuccino</h3>
+          <div class="price">£4.89</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>Flat White</h3>
+          <div class="price">£4.39</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>Espresso</h3>
+          <div class="price">£3.69 <span>4.19</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>Macchiato</h3>
+          <div class="price">£3.39</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>Mocha</h3>
+          <div class="price">£5.09</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>Hot Chocolate</h3>
+          <div class="price">£4.79</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+      </div>
+
+      <div class="toggle-btn" id="specials-panel">Specials</div>
+      
+      <div class="box-container" id="specials-panel">
+
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>Gingerbread Latte</h3>
+          <div class="price">£5.19</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+    
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>Pumpkin Spice Latte</h3>
+          <div class="price">£5.19</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+    
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+          <h3>Cinnamon Dolce Latte</h3>
+          <div class="price">£5.35</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/431/200/200" alt="">
+            <h3>Nutella Hot Chocolate</h3>
+            <div class="price">£4.99</div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+      </div>
+
+      <div class="toggle-btn" id="breakfast-panel">Breakfast</div>
+        
+      <div class="box-container" id="breakfast-panel">
+
+        <div class="box">
+          <img src="https://picsum.photos/id/493/200/200" alt="">
+          <h3>Bacon Ciabatta</h3>
+          <div class="price">£4.29</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+    
+        <div class="box">
+          <img src="https://picsum.photos/id/493/200/200" alt="">
+          <h3>Sausage Ciabatta</h3>
+          <div class="price">£4.29</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+    
+        <div class="box">
+          <img src="https://picsum.photos/id/493/200/200" alt="">
+          <h3>Breakfast Wrap</h3>
+          <div class="price">£4.39 <span>4.55</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/493/200/200" alt="">
+          <h3>Breakfast Vegetarian Wrap</h3>
+          <div class="price">£4.39 <span>4.55</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/493/200/200" alt="">
+          <h3>Sausage Roll</h3>
+          <div class="price">£3.89</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/493/200/200" alt="">
+          <h3>Chicken Bake</h3>
+          <div class="price">£4.29</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/493/200/200" alt="">
+          <h3>Steak Bake</h3>
+          <div class="price">£4.29</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+      </div>
+
+      <div class="toggle-btn" id="cold-drinks-panel">Cold Drinks</div>
+        
+      <div class="box-container" id="cold-drinks-panel">
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Coke</h3>
+          <div class="price">£2.99</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+    
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Diet Coke</h3>
+          <div class="price">£2.79</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+    
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Lemon Peach Iced Tea</h3>
+          <div class="price">£3.19</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Decante Still Water</h3>
+          <div class="price">£2.40</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Decante Sparkling Water</h3>
+          <div class="price">£2.40</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Iced Black Americano</h3>
+          <div class="price">£4.29</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Iced White Americano</h3>
+          <div class="price">£4.29</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Iced Mocha</h3>
+          <div class="price">£3.99</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Iced Latter</h3>
+          <div class="price">£4.59</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Raspberry, Blackberry & Strawberry Smoothie</h3>
+          <div class="price">£5.19 <span>5.45</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Passionfruit, Pineapple & Mango Smoothie</h3>
+          <div class="price">£5.19 <span>5.45</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Banana Milkshake</h3>
+          <div class="price">£4.89</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Chocolate Milkshake</h3>
+          <div class="price">£4.89</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Vanilla Milkshake</h3>
+          <div class="price">£4.89</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="https://picsum.photos/id/326/200/200" alt="">
+          <h3>Mocha Milkshake</h3>
+          <div class="price">£5.19</div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Footer structure -->
+    <div class="footer">
+
+      <div class="share">
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-facebook-f"></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="account.html">Account</a>
+      </div>
+      
+			<div class="credit">Created By <span>Eliseo Leonenco</span> | All Rights Reserved To Baza Brew Inc.</div>
+
+		</div>
+		
+    <script src="js/menu.js"></script>
+    <script src="js/home.js"></script>
+	</body>
+</html>

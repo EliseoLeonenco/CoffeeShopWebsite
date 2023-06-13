@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Baza Brew Coffee</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	</head>
+	<body>
+
+		<!-- Header structure -->
+        <header class="header">
+
+			<a href="index.html" class="logo">
+				<img src="images/baza_brew.png" alt="">
+			</a>
+
+			<nav class="menubar">
+				<img src="images/ornament_3.png" alt="">
+				<a href="index.html">Home</a>
+				<a href="about.html">About us</a>
+				<a href="menu.html">Menu</a>
+				<a href="account.html">Account</a>
+				<img src="images/ornament_2.png" alt="">
+			</nav>
+
+			<div class="icons">
+				<div class="fas fa-search" id="search-btn"></div>
+				<div class="fas fa-shopping-cart" id="cart-btn"></div>
+				<div class="fas fa-bars" id="menu-btn"></div>
+			</div>
+
+			<div class="search-form">
+				<input type="search" id="search-box" placeholder="search here...">
+				<label for="search-box" class="fas fa-search"></label>
+			</div>
+
+		</header>
+
+		<!-- Register/Log in panel structure -->
+        <div class="login-panel">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn">Log in</button>
+                    <button type="button" class="toggle-btn">Register</button>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="fab fa-twitter"></a>
+				    <a href="#" class="fab fa-instagram"></a>
+				    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/login.js"></script>
+		<script src="js/home.js"></script>
+	</body>
+</html>

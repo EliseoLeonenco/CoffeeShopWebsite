@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit&family=Montserrat:wght@300;400&family=Tourney:wght@100&display=swap');
+
+/* Reusable variables */
+:root {
+	--main-color: #4bbac9;
+	--black: #13131a;
+	--bg: #010103;
+}
+
+/* General styling */
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	transition: .2s linear;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 9rem;
+	scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+	width: .5rem;
+}
+
+html::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: #fff;
+	border-radius: 3rem;
+}
+
+body {
+	background-color: var(--bg);
+}
+
+.btn {
+	margin-top: 1rem;
+	display: inline-block;
+	padding: .9rem 3rem;
+	font-size: 1.7rem;
+	color: #fff;
+	background: var(--main-color);
+	cursor: pointer;
+}
+
+.btn:hover {
+	letter-spacing: .2rem;
+}
+
+section {
+	padding: 2rem 10%;
+}
+
+/* Header styling */
+.heading {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 3.5rem;
+	font-size: 4rem;
+}
+
+.heading span {
+	color: var(--main-color);
+	text-transform: uppercase;
+}
+
+.header {
+	background-color: var(--bg);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem 7%;
+	border-bottom: 1.5px dashed #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.header .logo img {
+	height: 6rem;
+}
+
+.header .menubar img {
+	height: 5rem;
+	vertical-align: middle; 
+	margin: 0 3em;
+}
+
+.header .menubar a {
+	margin: 0 1rem;
+	font-size: 1.6rem;
+	color: #fff;
+}
+
+.header .menubar a:hover {
+	color: var(--main-color);
+	border-bottom: .1rem solid var(--main-color);
+	padding-bottom: .3rem;
+}
+
+.header .icons div {
+	color: #fff;
+	cursor: pointer;
+	font-size: 2.5rem;
+	margin-left: 2rem;
+}
+
+.header .icons div:hover {
+	color: var(--main-color);
+}
+
+#menu-btn {
+	display: none;
+}
+
+.header .search-form {
+	position: absolute;
+	top: 115%;
+	right: 7%;
+	background: #fff;
+	width: 50rem;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	transform: scaleY(0);
+	transform-origin: top;
+}
+
+.header .search-form.active {
+	transform: scaleY(1);
+}
+
+.header .search-form input {
+	height: 100%;
+	width: 100%;
+	font-size: 1.6rem;
+	color: var(--black);
+	padding: 1rem;
+	text-transform: none;
+}
+
+.header .search-form label {
+	cursor: pointer;
+	font-size: 2.2rem;
+	margin-right: 1.5rem;
+	color: var(--black);
+}
+
+.header .search-form label:hover {
+	color: var(--main-color);
+}
+
+.home-panel {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url(images/baza_brew_screenshot_4.png) no-repeat;
+	background-position: center;
+}
+
+.home-panel .content {
+	max-width: 65rem;
+}
+
+.home-panel .content h3 {
+	font-size: 5rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.home-panel .content p {
+	font-size: 2rem;
+	font-weight: lighter;
+	line-height: 1.8;
+	padding: 1rem 0;
+	color: #eee;
+}
+
+/* Home page page about panels styling */
+.about-panel .row {
+	display: flex;
+	align-items: center;
+	background: var(--black);
+	flex-wrap: wrap;
+}
+
+.about-panel h1 {
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+}
+
+.about-panel .row#light {
+	background: #bbb;
+}
+
+.about-panel .row .image {
+	flex: 1 1 40%;
+}
+
+.about-panel .row .image img {
+	width: 100%;
+	display: block;
+}
+
+.about-panel .row .content {
+	flex: 1 1 4rem;
+	padding: 2rem;
+}
+
+.about-panel .row .content h3 {
+	font-size: 3rem;
+	color: #fff;
+}
+
+.about-panel .row .content p {
+	font-size: 1.6rem;
+	color: #ccc;
+	padding: 1rem 0;
+	line-height: 1.8;
+}
+
+.about-panel .row#light .content h3 {
+	color: #010103;
+}
+
+.about-panel .row#light .content p {
+	color: #010103;
+}
+
+/* Footer styling */
+.footer {
+	background: var(--black);
+	text-align: center;
+}
+
+.footer .share {
+	padding: 1rem;
+}
+
+.footer .share a {
+	height: 5rem;
+	width: 5rem;
+	line-height: 5rem;
+	font-size: 3rem;
+	color: #fff;
+	margin: .3rem;
+	border-radius: 50%;
+}
+
+.footer .share a:hover {
+	background-color: var(--main-color);
+}
+
+.footer .links {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 2rem 0;
+	gap: 1rem;
+}
+
+.footer .links a {
+	padding: .7rem 2rem;
+	color: #fff;
+	font-size: 2rem;
+	border: 0.5px solid #fff;
+}
+
+.footer .links a:hover {
+	background: var(--main-color);
+}
+
+.footer .credit {
+	font-size: 2rem;
+	color: #fff;
+	font-weight: lighter;
+	padding: 1.5rem;
+}
+
+.footer .credit span {
+	color: var(--main-color);
+}
+
+/* Menu page styling */
+.menu {
+	padding: 15rem 8rem;
+}
+
+.menu .heading {
+	font-size: 7rem;
+	margin-bottom: 2.5rem;
+}
+
+.menu .toggle-btn {
+	cursor: pointer;
+	color: #fff;
+	padding: 5rem;
+	font-size: 3rem;
+	background-color: #333;
+	text-align: center;
+	user-select: none;
+	transition: 1s;
+}
+
+.menu .toggle-btn#food-panel {
+	background: url(images/sandwich.jpeg) no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.menu .toggle-btn#hot-drinks-panel {
+	background: url(images/coffee.jpg) no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.menu .toggle-btn#specials-panel {
+	background: url(images/specials.avif) no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.menu .toggle-btn#breakfast-panel {
+	background: url(images/croissants.jpg) no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.menu .toggle-btn#cold-drinks-panel {
+	background: url(images/milkshake.avif) no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.menu .box-container {
+	display: none;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 1.5rem;
+	padding: 2rem;
+}
+
+.menu .box-container.active {
+  display: grid;
+}
+
+.menu .box-container .box {
+	padding: 5rem;
+	text-align: center;
+	border: 0.5px solid #fff;
+}
+
+.menu .box-container .box img {
+	height: 15rem;
+	border-radius: 100%;
+}
+
+.menu .box-container .box h3 {
+	color: #fff;
+	font-size: 2rem;
+	padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+	color: #fff;
+	font-size: 2.5rem;
+	padding: .5rem 0;
+}
+
+.menu .box-container .box .price span {
+	font-size: 1.5rem;
+	text-decoration: line-through;
+}
+
+.menu .box-container .box:hover {
+	background-color: #fff;
+}
+
+.menu .box-container .box:hover > * {
+	color: var(--black);
+}
+
+/* Register/Log in page styling */
+.login-panel {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/baza_brew_screenshot_4.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.login-panel .form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 13% auto;
+    background: var(--black);
+    padding: 5px;
+    overflow: hidden;
+}
+
+
+.login-panel .form-box .button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    border: 0.5px solid #999;
+    border-radius: 30px;
+}
+
+.login-panel .form-box .button-box .toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+	color: #fff;
+}
+
+.login-panel .form-box .button-box #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, var(--main-color),#4c8fa6);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.login-panel .form-box .social-icons {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.login-panel .form-box .social-icons a {
+    height: 5rem;
+	width: 5rem;
+	line-height: 5rem;
+	font-size: 3rem;
+	color: #fff;
+	margin: .3rem;
+	border-radius: 50%;
+    text-decoration: none;
+}
+
+.login-panel .form-box .social-icons a:hover {
+    background: var(--main-color);
+}
+
+.login-panel .form-box .input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.login-panel .form-box .input-group .input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+	color: #fff;
+}
+
+.login-panel .form-box .input-group .submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, var(--main-color),#4c8fa6);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.login-panel .form-box .input-group .check-box {
+    margin: 30px 10px 30px 0;
+}
+
+.login-panel .form-box .input-group span {
+    color: #777;
+    font-size: 12px;
+    position: absolute;
+    bottom: 68px;
+}
+
+.login-panel .form-box #login {
+    left: 50px;
+}
+
+.login-panel .form-box #register {
+    left: 450px;
+}
+
+/* About us page styling */
+.about-us-heading {
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.about-us-heading h1 {
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.about-us-heading p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.about-us-container {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+	margin-bottom: 15rem;
+}
+
+.about-us-container img {
+    flex: 0 50%;
+    max-width: 50%;
+    height: auto;
+}
+
+.about-us-container .content {
+    padding: 35px;
+}
+
+.about-us-container .content h2 {
+    color: var(--main-color);
+    font-size: 24px;
+    margin: 15px 0px;
+}
+
+.about-us-container .content p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+
+.about-us-container .content .btn {
+    font-size: 2rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 1125px) {
+
+	.about-panel .row .content h3 {
+		font-size: 2.8rem;
+	}
+	
+	.about-panel .row .content p {
+		font-size: 1.4rem;
+	}
+
+	.login-panel .form-box {
+		margin: 20% auto;
+	}
+
+	.about-us-container {
+        flex-direction: column;
+    }
+
+    .about-us-container img {
+        flex: 0 100%;
+        max-width: 100%;
+    }
+
+    .about-us-container .content {
+        flex: 0 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1051px) {
+	
+	.about-panel .row .content h3 {
+		font-size: 2.6rem;
+	}
+	
+	.about-panel .row .content p {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 1010px) {
+
+	.about-panel .row .content h3 {
+		font-size: 2.5rem;
+	}
+	
+	.about-panel .row .content p {
+		font-size: 1.2rem;
+	}
+
+	.about-panel .btn {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 960px) {
+
+	.about-panel .row .content h3 {
+		font-size: 2.2rem;
+	}
+	
+	.about-panel .row .content p {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 920px) {
+	.about-panel .row {
+		flex-direction: column;
+	}
+  
+	.about-panel .row .image {
+	  	order: 1;
+	  	margin-bottom: 2rem;
+	}
+  
+	.about-panel .row .content {
+	  	order: 2;
+	}
+
+	.about-panel .row#light .image {
+		order: 2;
+		margin-bottom: 0;
+	  }
+	
+	.about-panel .row#light .content {
+		order: 1;
+	}
+
+	.about-panel .row .content h3 {
+		font-size: 3rem;
+	}
+	
+	.about-panel .row .content p {
+		font-size: 2rem;
+	}
+
+	.about-panel .btn {
+		font-size: 1.8rem;
+	}
+}
+
+@media (max-width:911px) {
+	html {
+		font-size: 55%;
+	}
+
+	.header {
+		padding: 1.5rem 2rem;
+	}
+}
+
+@media (max-width:768px) {
+	
+	#menu-btn {
+		display: inline-block;
+	}
+
+	.header .menubar {
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		background: #fff;
+		width: 30rem;
+		height: calc(100vh - 9.5rem);
+	}
+
+	.header .menubar.active {
+		right: 0;
+	}
+
+	.header .menubar a {
+		color: var(--black);
+		display: block;
+		margin: 1.5rem;
+		padding: .5rem;
+		font-size: 2rem;
+	}
+
+	.header .search-form {
+		width: 90%;
+		right: 2rem;
+	}
+
+	.home-panel {
+		background-position: left;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.home-panel .content h3 {
+		font-size: 4.5rem;
+	}
+
+	.home-panel .content p {
+		font-size: 1.5rem;
+	}
+
+}
+
+@media (max-width: 660px) {
+
+	.about-panel .row .content h3 {
+		font-size: 3.5rem;
+	}
+	
+	.about-panel .row .content p {
+		font-size: 2.5rem;
+	}
+
+	.login-panel .form-box {
+		margin: 30% auto;
+	}
+}
+
+@media (max-width: 560px) {
+
+	.about-panel .row .content h3 {
+		font-size: 4rem;
+	}
+	
+	.about-panel .row .content p {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width:450px) {
+	
+	html {
+		font-size: 50%;
+	}
+}
